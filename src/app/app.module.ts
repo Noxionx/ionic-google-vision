@@ -7,6 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { FaceDetectorProvider } from '../providers/face-detector/face-detector';
+import { CountryProvider } from '../providers/country/country';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FaceDetectorProvider } from '../providers/face-detector/face-detector';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    FaceDetectorProvider
+    FaceDetectorProvider,
+    CountryProvider
   ]
 })
 export class AppModule {}
